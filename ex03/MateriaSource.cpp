@@ -6,11 +6,12 @@
 /*   By: yingzhan <yingzhan@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 10:27:41 by yingzhan          #+#    #+#             */
-/*   Updated: 2025/11/25 10:52:20 by yingzhan         ###   ########.fr       */
+/*   Updated: 2025/11/25 14:20:01 by yingzhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
+#include <iostream>
 
 MateriaSource::MateriaSource()
 {
@@ -62,17 +63,23 @@ void MateriaSource::learnMateria(AMateria* m)
 		if (templates[i] == NULL)
 		{
 			templates[i] = m->clone();
-			return ;
+			delete m;
+ 			return ;
 		}
 	}
+	delete m;
 }
 
 AMateria*	MateriaSource::createMateria(std::string const& type)
 {
+	(void)type;
 	for (int i = 0; i < 4; i++)
 	{
-		if (templates[i] != NULL && type == templates[i]->getType())
-			return (templates[i]->clone());
+		if (templates[i] != NULL)
+		{
+			if (templates[i]->getType() == type)
+				return (templates[i]->clone());
+		}
 	}
 	return (NULL);
 }

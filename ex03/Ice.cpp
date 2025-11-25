@@ -6,14 +6,14 @@
 /*   By: yingzhan <yingzhan@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 21:46:46 by yingzhan          #+#    #+#             */
-/*   Updated: 2025/11/24 22:01:44 by yingzhan         ###   ########.fr       */
+/*   Updated: 2025/11/25 12:31:26 by yingzhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Ice.hpp"
 #include <iostream>
 
-Ice::Ice() : AMateria("Ice") {}
+Ice::Ice() : AMateria("ice") {}
 
 Ice::Ice(const Ice& other) : AMateria(other) {}
 

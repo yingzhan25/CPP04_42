@@ -6,11 +6,12 @@
 /*   By: yingzhan <yingzhan@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 22:55:06 by yingzhan          #+#    #+#             */
-/*   Updated: 2025/11/25 10:42:39 by yingzhan         ###   ########.fr       */
+/*   Updated: 2025/11/25 12:32:34 by yingzhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+#include <iostream>
 
 Character::Character(const std::string name) : _name(name)
 {

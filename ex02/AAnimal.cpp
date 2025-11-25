@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yingzhan <yingzhan@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 10:55:02 by yingzhan          #+#    #+#             */
-/*   Updated: 2025/11/24 16:04:01 by yingzhan         ###   ########.fr       */
+/*   Updated: 2025/11/25 15:03:05 by yingzhan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ AAnimal::~AAnimal()
 	std::cout << "AAnimal destructor called" << std::endl;
 }
 
-void	AAnimal::makeSound(void)const
-{
-	std::cout << "AAnimal sounds......" << std::endl;
-}
+// void	AAnimal::makeSound(void)const
+// {
+// 	std::cout << "AAnimal sounds......" << std::endl;
+// }
 
 const std::string&	AAnimal::getType()const
 {
